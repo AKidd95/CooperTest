@@ -1,7 +1,15 @@
-function Cooper(person, distance) {};
+function Cooper(person) {
 
+/* Cooper.prototype.calculateCooper = function(person) {
+ var distance = this.distance;
+ var age = this.age;
+ var gender = this.gender;
+ this.cooperValue =  parseFloat(cooperFormula.toFixed(2));
+ setCooperResult(this);
+}; */
+};
 
-function cooperAssessment(this) {
+function Cooper(person) {
   switch(this.gender) {
   case "female":
   if (this.age >= 13 && this.age <= 14 ) {
@@ -102,4 +110,6 @@ function cooperAssessment(this) {
     }
   }
 }
+});
+
 };
