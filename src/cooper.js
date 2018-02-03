@@ -1,8 +1,10 @@
 function Cooper(person, distance) {};
 
 
-function cooperAssessment(person, distance) {
-  if (person.age >= 13 && person.age <= 14 ) {
+function cooperAssessment(this) {
+  switch(this.gender) {
+  case "female":
+  if (this.age >= 13 && this.age <= 14 ) {
     if(distance > 2000) {
       assessment = 'Excellent';
     } else if (distance <= 1999 && distance >= 1900) {
@@ -16,7 +18,7 @@ function cooperAssessment(person, distance) {
     }
   }
 
-  if (person.age >= 15 && person.age <= 16 ) {
+  if (this.age >= 15 && this.age <= 16 ) {
     if(distance > 2100) {
       assessment = 'Excellent';
     } else if (distance <= 2099 && distance >= 2000) {
@@ -30,7 +32,7 @@ function cooperAssessment(person, distance) {
     }
   }
 
-  if (person.age >= 17 && person.age <= 19 ) {
+  if (this.age >= 17 && this.age <= 19 ) {
     if(distance > 2300) {
       assessment = 'Excellent';
     } else if (distance <= 2299 && distance >= 2100) {
@@ -44,7 +46,7 @@ function cooperAssessment(person, distance) {
     }
   }
 
-  if (person.age >= 20 && person.age <= 29 ) {
+  if (this.age >= 20 && this.age <= 29 ) {
     if(distance > 2700) {
       assessment = 'Excellent';
     } else if (distance <= 2699 && distance >= 2200) {
@@ -58,7 +60,7 @@ function cooperAssessment(person, distance) {
     }
   }
 
-  if (person.age >= 30 && person.age <= 39 ) {
+  if (this.age >= 30 && this.age <= 39 ) {
     if(distance > 2500) {
       assessment = 'Excellent';
     } else if (distance <= 2499 && distance >= 2000) {
@@ -72,7 +74,7 @@ function cooperAssessment(person, distance) {
     }
   }
 
-  if (person.age >= 40 && person.age <= 49 ) {
+  if (this.age >= 40 && this.age <= 49 ) {
     if(distance > 2300) {
       assessment = 'Excellent';
     } else if (distance <= 2299 && distance >= 1900) {
@@ -86,7 +88,7 @@ function cooperAssessment(person, distance) {
     }
   }
 
-  if (person.age >= 50 ) {
+  if (this.age >= 50 ) {
     if(distance > 2200) {
       assessment = 'Excellent';
     } else if (distance <= 2199 && distance >= 1700) {
@@ -99,10 +101,5 @@ function cooperAssessment(person, distance) {
       assessment = 'Poor';
     }
   }
+}
 };
-// var warm_up = 10;
-// if (warm_up = 10) {
-//   warm_up = true
-// } else {
-//   warm_up = false
-// };

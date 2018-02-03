@@ -2,7 +2,8 @@ describe('person', function() {
   beforeEach(function() {
     person = new Person({
       gender: 'Female',
-      age: 25
+      age: 25,
+      distance: 2000
     });
   });
 
@@ -14,4 +15,7 @@ describe('person', function() {
     expect(person.age).toBe(25);
   });
 
+  it('should have distance', function() {
+    expect(person.distance).toBe(2000);
+  });
 });
