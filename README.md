@@ -11,16 +11,24 @@ Follow these steps:
 
 2. Create a person object with the attributes gender and age.
 
-``` person = new Person({age: 20, gender: 'male'});
-=> Person {gender: "male", age: 20}
+```
+person = new Person({age: 44, gender: 'male'});
+=> Person {gender: "male", age: 44}
 ```
 
-person = new Person({age: 20, gender: 'male'});
-=> Person {gender: "male", age: 20}
-Input the distance completed in meters calling the cooperResult function:
-cooperResult(person, 2300);
-=> undefined
 
-Call the cooperMessage function on the person created to get a message back assessing what's the level of your performance:
+Input the distance completed to call the cooperAssess function:
+```
+cooperAssess(person, 2300);
+=> undefined
+```
+Call the cooperMessage function on the person created to get a message back with your result:
+
+```
 person.cooperMessage
 "Average"
+```
+
+# Resources
+
+Our inspiration comes from CraftAcademy course material, Jade and Anotella's solution, stack Overflow and other internet sources.
