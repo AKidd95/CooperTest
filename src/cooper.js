@@ -1,4 +1,4 @@
-function cooperAssess(obj, distance){
+function Cooper(obj, distance){
   if(obj.gender === 'female') {
       if(obj.age >= 13 && obj.age <= 14 ) {
         if(distance > 2000) {
