@@ -1,6 +1,6 @@
 function cooperAssess(this, distance) {
   if(this.gender === 'female') {
-      if (this.age >= 13 && this.age <= 14 ) {
+      if(this.age >= 13 && this.age <= 14 ) {
         if(distance > 2000) {
           this.cooperMessage = 'Excellent';
         } else if (distance <= 1999 && distance >= 1900) {
@@ -16,7 +16,7 @@ function cooperAssess(this, distance) {
         }
       }
 
-      if (this.age >= 15 && this.age <= 16 ) {
+      else if(this.age >= 15 && this.age <= 16 ) {
         if(distance > 2100) {
           this.cooperMessage = 'Excellent';
         } else if (distance <= 2099 && distance >= 2000) {
@@ -30,7 +30,7 @@ function cooperAssess(this, distance) {
         }
       }
 
-      if (this.age >= 17 && this.age <= 19 ) {
+      else if(this.age >= 17 && this.age <= 19 ) {
         if(distance > 2300) {
           this.cooperMessage = 'Excellent';
         } else if (distance <= 2299 && distance >= 2100) {
@@ -44,7 +44,7 @@ function cooperAssess(this, distance) {
         }
       }
 
-      if (this.age >= 20 && this.age <= 29 ) {
+      else if(this.age >= 20 && this.age <= 29 ) {
         if(distance > 2700) {
           this.cooperMessage = 'Excellent';
         } else if (distance <= 2699 && distance >= 2200) {
@@ -58,7 +58,7 @@ function cooperAssess(this, distance) {
         }
       }
 
-      if (this.age >= 30 && this.age <= 39 ) {
+      else if(this.age >= 30 && this.age <= 39 ) {
         if(distance > 2500) {
           this.cooperMessage = 'Excellent';
         } else if (distance <= 2499 && distance >= 2000) {
@@ -72,7 +72,7 @@ function cooperAssess(this, distance) {
         }
       }
 
-      if (this.age >= 40 && this.age <= 49 ) {
+      else if(this.age >= 40 && this.age <= 49 ) {
         if(distance > 2300) {
           this.cooperMessage = 'Excellent';
         } else if (distance <= 2299 && distance >= 1900) {
@@ -86,7 +86,7 @@ function cooperAssess(this, distance) {
         }
       }
 
-      if (this.age >= 50 ) {
+      else if(this.age >= 50 ) {
         if(distance > 2200) {
           this.cooperMessage = 'Excellent';
         } else if (distance <= 2199 && distance >= 1700) {
@@ -99,5 +99,10 @@ function cooperAssess(this, distance) {
           this.cooperMessage = 'Poor';
         }
       }
+    } else {
+        console.log("incorrect age!")
     }
+  else {
+    console.log("incorrect gender!")
+  }
 });
