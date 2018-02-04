@@ -5,5 +5,5 @@ function Person(attr) {
 
 Person.prototype.calculateCooper = function(distance) {
   cooper = new Cooper();
-  cooper.cooperAssess(obj, distance);
+  cooper.cooperAssess(this, distance);
 };
