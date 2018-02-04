@@ -2,7 +2,7 @@ describe("Cooper", function() {
   var person;
 
   beforeEach(function() {
-    person = new Person({ gender: 'female', age: 25, distance: 2000 });
+    person = new Person({ gender: 'female', age: 25 });
   });
 
   it('Should be gender female', function() {
