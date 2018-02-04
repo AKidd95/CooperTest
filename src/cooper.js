@@ -212,3 +212,4 @@ function cooperAssess(obj, distance){
       console.log("invalid gender!")
     }
 });
+});

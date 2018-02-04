@@ -2,7 +2,7 @@ describe("Cooper", function() {
   var person;
 
   beforeEach(function() {
-    person = new Person({ gender: 'female', age: 25 });
+  person = new Person({ gender: 'female', age: 25 });
   });
 
   it('Should be gender female', function() {
@@ -17,4 +17,17 @@ describe("Cooper", function() {
     person.calculateCooper(2000);
     expect(person.cooperMessage).toEqual('Average');
   });
+
+  // it("returns the correct value", function(){
+  //   person = new Person({age: 14, gender: 'male'});
+  //   person.calculateCooper(100);
+  //   expect(person.cooperMessage).toEqual('Poor');
+  // });
+  //
+  // it("returns the correct value", function(){
+  //   person = new Person({age: 50, gender: 'male'});
+  //   person.calculateCooper(2400);
+  //   expect(person.cooperMessage).toEqual('Excellent');
+  // });
+
 });
