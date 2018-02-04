@@ -1,4 +1,4 @@
-describe('person', function() {
+describe("Person", function() {
   var person;
 
   beforeEach(function() {
@@ -7,6 +7,7 @@ describe('person', function() {
       age: 25,
     });
   });
+
 
   it('person should have gender', function() {
     expect(person.gender).toBe('Female');

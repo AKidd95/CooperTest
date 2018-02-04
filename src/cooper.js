@@ -11,8 +11,6 @@ function cooperAssess(obj, distance){
           obj.cooperMessage = 'Below Average';
         } else if (distance < 1500) {
           obj.cooperMessage = 'Poor';
-        } else {
-
         }
       }
 
@@ -211,5 +209,6 @@ function cooperAssess(obj, distance){
     else {
       console.log("invalid gender!")
     }
-});
-});
+  }
+}
+}

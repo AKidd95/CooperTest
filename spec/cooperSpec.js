@@ -15,7 +15,7 @@ describe("Cooper", function() {
 
   it("returns the correct value", function(){
     person.calculateCooper(2000);
-    expect(person.cooperMessage).toEqual('Average');
+    expect(cooper.cooperMessage).toEqual('Average');
   });
 
   // it("returns the correct value", function(){
