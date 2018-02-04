@@ -105,7 +105,6 @@ function cooperAssess(obj, distance){
   else {
     console.log("invalid gender!")
   }
-}
 
   if(obj.gender === 'male') {
       if(obj.age >= 13 && obj.age <= 14 ) {
@@ -205,6 +204,11 @@ function cooperAssess(obj, distance){
           obj.cooperMessage = 'Below Average';
         } else (distance < 1300) {
           obj.cooperMessage = 'Poor';
-
-
+        }
+      } else {
+          console.log("invalid age!")
+      }
+    else {
+      console.log("invalid gender!")
+    }
 });
